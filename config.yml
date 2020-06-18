@@ -11,11 +11,11 @@ login:
 #用户组配置
 user:
   #username 学号或者工号
-  username: 18305121
+  username: 18305112
   #password 密码
-  password: 256058
-  #address 地址
-  address: 中国四川省广元市利州区滨河北路二段
+  password: ******
+  #address 定位地址
+  address: 中国四川省广元市利州区
   #email 接受通知消息的邮箱
   email: vilron2000@163.com
 
