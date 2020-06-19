@@ -32,6 +32,9 @@ git clone https://github.com/voiin/jinrixiaoyuan.git
 3. 模拟登录需要chrome浏览器及[chromedriver](https://chromedriver.storage.googleapis.com/index.html)驱动,驱动版本需与chrome浏览器一致
 
 # 最后
-书写不易，觉得不错的话 给个star吧
 
-学生一枚，若有不足的地方请各位大佬指点
+- 此项目开发借鉴了[子墨](https://github.com/ZimoLoveShuang/auto-submit)的开源项目,在此特别感谢！
+
+- 书写不易，觉得不错的话 给个star吧
+
+- 学生一枚，若有不足的地方请各位大佬指点
