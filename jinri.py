@@ -115,7 +115,7 @@ def fillForm(form):
                 for i in range(0, len(fieldItems))[::-1]:
                     if fieldItems[i]['content'] != default['value']:
                         del fieldItems[i]
-    print(form)
+    #print(form)
     return form
 
 
@@ -142,8 +142,7 @@ def submitForm(formWid, address, collectWid, schoolTaskWid, form, cookies):
     msg = r.json()['message']
     return msg
 
-
-# 腾讯云函数启动函数
+#腾讯云函数启动函数
 def main():
     try:
         log('脚本开始执行。。。')
@@ -190,16 +189,14 @@ def main():
 def sendMessage(send, msg):
     if send != '':
         log('正在发送邮件通知。。。')
-        res = requests.post(url='http://www.zimo.wiki:8080/mail-sender/sendMail',
-                            data={'title': '今日校园疫情上报自动提交结果通知', 'content': getTimeStr() + str(msg), 'to': send})
+        res = requests.post(url='http://mail.voiin.com', data=json.dumps({'title': '今日校园疫情上报自动提交结果通知', 'content': getTimeStr() + msg, 'to': send}))
+        res.encoding = 'utf-8'
         code = res.json()['code']
         if code == 0:
             log('发送邮件通知成功。。。')
         else:
             log('发送邮件通知失败。。。')
-            log(res.json())
-
+            log(res.json()['msg'])
 
 if __name__ == '__main__':
-    print(getCookies())
-    #main()
+    main()
