@@ -326,8 +326,8 @@ def main():
         raise e
     else:
         return 'auto submit success.'
+
 # 发送邮件通知
-        
 def sendMessage(send,msg):
     if send != '':
         log('正在发送邮件通知。。。')
