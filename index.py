@@ -248,7 +248,7 @@ def getPictureUrl(session, fileName, host):
     photoUrl = res.json().get('datas')
     return photoUrl
 
-#提交查寝表单
+# 提交查寝表单
 def submitSign(signInstanceWid, longitude, latitude, photoUrl, position, session, host):
     submitSign = 'https://{host}/wec-counselor-attendance-apps/student/attendance/submitSign'.format(host=host)
     res = session.post(url=submitSign, headers=submitHeaders, data=json.dumps(
@@ -258,7 +258,7 @@ def submitSign(signInstanceWid, longitude, latitude, photoUrl, position, session
     msg = res.json()['message']
     return msg
 
-#疫情填报启动函数
+# 疫情填报启动函数
 def formMain(user, session, host):
     log('正在查询最新待填写问卷。。。')
     params = queryForm(session, host)
@@ -274,7 +274,7 @@ def formMain(user, session, host):
                      params['schoolTaskWid'], form, session, host)
     return msg
 
-#查寝拍照启动函数
+# 查寝拍照启动函数
 def photoMain(user,session,host):
     log('正在查询最新待拍照的查寝表单。。。')
     params = sleepCheckFrom(session, host)
