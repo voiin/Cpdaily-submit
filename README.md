@@ -20,7 +20,7 @@
 ## 川信学院的同学
 1. clone 或下载项目到本地
 ```bash
-git clone https://github.com/voiin/jinrixiaoyuan.git
+git clone https://github.com/voiin/Cpdaily-submit.git
 ```
 2. 安装脚本所需依赖库
 ```bash
