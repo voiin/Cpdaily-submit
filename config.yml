@@ -10,6 +10,8 @@ users:
       email: vilron2000@163.com
       #school 学校全称
       school: 四川信息职业技术学院
+      #photo 查寝图片
+      photo: '1.jpg'
 # 多用户配置
   - user:
       #username 学号或者工号
@@ -22,6 +24,8 @@ users:
       email: vilron2000@163.com
       #school 学校全称
       school: 四川信息职业技术学院
+      #photo 查寝图片
+      photo: '2.jpg'
 # 今日校园表单相关配置
 cpdaily:
   # 表单组默认选项配置
@@ -50,7 +54,3 @@ cpdaily:
         type: 1
         title: 寝室号
         value: 4129
-
-# 今日校园夜间查寝相关配置
-photo:
-  url: 'D:\python\1.jpg'
