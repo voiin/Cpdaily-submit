@@ -283,7 +283,7 @@ def photoMain(user,session,host):
         exit(-1)
     log('查询最新待拍照的查寝表单成功。。。')
     log('正在自动上传图片至阿里云oss。。。')
-    fileName = uploadPicture(session,config['photo']['url'], host)
+    fileName = uploadPicture(session, user['user']['photo'], host)
     photoUrl = getPictureUrl(session,fileName, host)
     log('上传图片至阿里云oss成功。。。')
     log('正在自动提交。。。')
