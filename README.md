@@ -4,17 +4,16 @@
 
 **写此项目的初衷是厌烦了每日三餐的疫情重复化填写，加之自己有嗜睡的习惯，也因此时常被辅导喵请喝茶😀**
 
-**本项目仅供学习交流使用，若侵犯您公司或企业的利益，请及时告知删除**
 
 # 开发环境
 - Win10, Python3.8, PyCharm 2020.2.1 (Community Edition)
 - 模拟登录需要chrome浏览器及[chromedriver](https://chromedriver.storage.googleapis.com/index.html)驱动,驱动版本需与chrome浏览器一致
 
 # 项目说明
-- `config.yml`  配置文件
-- `jinri.py`  自动化脚本
-- `generate.py` 配置文件生成
-- `requirements.txt` 脚本依赖的库模块
+- 📄`config.yml`  配置文件
+- 🍩`jinri.py`  自动化脚本
+- 🍕`generate.py` 配置文件生成
+- 🍥`requirements.txt` 脚本依赖的库模块
 
 
 # 食用方式
@@ -36,7 +35,7 @@ python index.py
 
 ## 其他学院的同学
 
-##根据自己学院疫情填报选项，运行`python generate.py`生成对应的填报配置信息##
+**根据自己学院疫情填报选项，运行`python generate.py`生成对应的填报配置信息**
 
 
 # 最后
