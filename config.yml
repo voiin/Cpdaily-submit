@@ -1,44 +1,29 @@
-#登陆相关配置
-login:
-  #开放的模拟登陆api服务器地址
-  api: "http://www.zimo.wiki:8080/wisedu-unified-login-api-v1.0/api/login"
-  #使用api的所需要的参数
-  #金智教务系统统一认证地址，service参数的值表示认证成功后跳转地址
-  login-url: "http://authserver.scitc.com.cn/authserver/login?service=https%3A%2F%2Fscitc.cpdaily.com%2Fportal%2Flogin"
-  #保证用户名（学号或者工号）和密码正确可不配置下面两项，下面两项的功能是用于验证码识别
-  needcaptcha-url:
-  captcha-url:
-#用户组配置
-user:
-  #username 学号或者工号
-  username: 18305112
-  #password 密码
-  password: ******
-  #address 定位地址
-  address: 中国四川省广元市利州区
-  #email 接受通知消息的邮箱
-  email: vilron2000@163.com
-
+users:
+  - user:
+      #username 学号或者工号
+      username: 18305199
+      #password 密码
+      password: '******'
+      #address 地址
+      address: 中国四川省广元清华大学
+      #email 接受通知消息的邮箱
+      email: vilron2000@163.com
+      #school 学校全称
+      school: 四川信息职业技术学院
+#多用户配置
+  - user:
+      #username 学号或者工号
+      username: 18305232
+      #password 密码
+      password: '******'
+      #address 地址
+      address: 中国四川省广元清华大学
+      #email 接受通知消息的邮箱
+      email: vilron2000@163.com
+      #school 学校全称
+      school: 四川信息职业技术学院
+#今日校园表单相关配置
 cpdaily:
-  api:
-    host: scitc.cpdaily.com
-    #查询每天的collectWid的接口
-    query-collect-wid-api:
-      url: "https://scitc.cpdaily.com/wec-counselor-collector-apps/stu/collector/queryCollectorProcessingList"
-      params: {
-        #pageSize大于等于必填项的数量就可以了
-        'pageSize': 6,
-        'pageNumber': 1
-      }
-    #查询每个收集信息详情的接口
-    detail-collector:
-      url: "https://scitc.cpdaily.com/wec-counselor-collector-apps/stu/collector/detailCollector"
-    #查询每个收集信息详情对应的表单项接口
-    get-form-fields:
-      url: "https://scitc.cpdaily.com/wec-counselor-collector-apps/stu/collector/getFormFields"
-    #提交表单的接口
-    submit-form:
-      url: "https://scitc.cpdaily.com/wec-counselor-collector-apps/stu/collector/submitForm"
   #表单组默认选项配置
   defaults:
     #表单默认选项配置，按顺序
@@ -51,7 +36,7 @@ cpdaily:
         value: <37.3℃
     - default:
         type: 1
-        title: 实测体温
+        title: 实测体温（℃）
         value: 36.5
     - default:
         type: 2
@@ -65,3 +50,7 @@ cpdaily:
         type: 1
         title: 寝室号
         value: 4129
+
+#今日校园夜间查寝相关配置
+photo:
+  url: 'D:\python\1.jpg'
