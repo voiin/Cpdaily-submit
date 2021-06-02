@@ -1,5 +1,5 @@
 requests==2.23.0
 oss2==2.13.0
-urllib3==1.25.9
+urllib3==1.26.5
 selenium==3.141.0
 PyYAML==5.3.1
